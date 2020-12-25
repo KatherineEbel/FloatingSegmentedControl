@@ -9,7 +9,7 @@ import SwiftUI
 /// A control for selecting from a set of mutually exclusive values.
 public struct FloatingSegmentedControlView: View {
     @State private var widths: [CGFloat] = Array(repeating: 0, count: 100)
-    @State private var selectedIndex: Int = 0
+    @State var selectedIndex: Int = 0
     @State private var buttomTapScale: CGFloat = 1
     
     var items: [String]
